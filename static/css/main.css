@@ -1,0 +1,36 @@
+:root {
+    --dark: #B38148;
+    --medium: #FFC88A;
+    --light: #FFF7F0;
+    --accent-dark: #0C3A7B;
+    --accent-light: #FFF7F0;
+}
+body {
+    background-color: var(--light);
+}
+#logo {
+    background-image: url('/images/logo.png');
+    height:150px;
+    width:300px;
+    background-size:300px;
+    background-repeat:no-repeat;
+    z-index: 2;
+    position: absolute;
+}
+#header, #hero, #warrantyhero, #rackhero, #imager, #form {
+    background-color: var(--accent-dark);
+}
+#hero {
+    color: var(--light);
+}
+.highlight {
+    color: var(--accent-dark);
+    font-weight:bold;
+    margin-top:10px;
+}
+#footer {
+    margin-top:20px;
+    padding-bottom:20px;
+    background-color: var(--accent-dark);
+    color: var(--light);
+}
