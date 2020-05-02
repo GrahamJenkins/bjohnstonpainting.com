@@ -1,4 +1,4 @@
-                    <div id="sidenav" class="sidenav">
+                    <div id="nav">
                             {{ $currentPage := . }}
                             {{ range .Site.Menus.main}}
                                 {{ if .HasChildren }}
@@ -17,7 +17,7 @@
                             </ul>
                                 {{ else }}
                             <li>
-                                <a href="{{ .URL }}">
+                                <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }}>
                                     {{ .Pre }}
                                     <span>{{ .Name }}</span>
                                 </a>

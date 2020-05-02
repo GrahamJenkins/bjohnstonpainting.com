@@ -8,18 +8,3 @@ theme = "bjpainting"
         name = "Home"
         url = "/"
         weight = -110
-    [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-        weight = -90
-    [[menu.main]]
-        identifier = "services"
-        name = "Services"
-        url = "/services"
-        weight = -89
-    [[menu.main]]
-        identifier = "contact"
-        name = "Contact"
-        url = "/contact"
-        weight = -80
