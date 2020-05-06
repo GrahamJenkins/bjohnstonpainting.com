@@ -37,8 +37,11 @@ body {
     font-weight:bold;
     margin-top:10px;
 }
+.form {
+    background-color: #afcefa;
+    padding-top:20px;
+}
 #footer {
-    margin-top:20px;
     padding:20px 0;
     background-color: var(--accent-dark);
     color: var(--light);
