@@ -16,7 +16,6 @@ body {
     width:200px;
     background-size:200px;
     background-repeat:no-repeat;
-    border:solid 1px green;
 }
 #header, #hero {
     background-color: var(--accent-dark);
