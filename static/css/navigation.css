@@ -1,0 +1,62 @@
+ .nav {
+    font-size:16px;
+    list-style: none;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    z-index: 5;
+}
+.nav li {
+    float: left;
+    margin:0;
+    position: relative;
+}
+.nav li ul li {
+    margin:0;
+    background-color: var(--menubg);
+}
+.nav li a {
+    display: block;
+    padding: 5px;
+    margin-right:5px;
+    color: #fff;
+    text-decoration: none;
+    height:30px;
+}
+.nav a:hover, .nav a.active {
+    border-bottom:solid 2px white;
+}
+.nav ul li a, .nav ul li a.active, .nav ul li a:hover {
+    border:none;
+}
+
+/*--- DROPDOWN ---*/
+.nav ul li a {
+    margin:0;
+    padding:10px;
+}
+.nav ul {
+    margin:0;
+    background-color: #fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background: rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style: none;
+    position: absolute;
+    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+}
+.nav ul li {
+    padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float: none;
+}
+.nav ul a {
+    white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.nav li:hover ul { /* Display the dropdown on hover */
+    left: 0; /* Bring back on-screen when needed */
+}
+.nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+}
+.nav li:hover ul li a:hover, .nav ul li a.active { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background-color: var(--menuhover);
+}

@@ -1,4 +1,6 @@
 :root {
+    --menubg: #154280;
+    --menuhover: #222;
     --dark: #B38148;
     --medium: #FFC88A;
     --light: #FFF7F0;
@@ -30,27 +32,6 @@ body {
 #branding {
     text-align:right;
     color: var(--light);
-}
-#nav {
-    position:absolute;
-    bottom: 0;
-    right:0;
-}
-#nav a {
-    height: 30px;
-    color:white;
-    font-weight:bold;
-    text-decoration:none;
-    font-size:16px;
-    padding:5px;
-}
-#nav a:hover, #nav a.active {
-    border-bottom:solid 2px white;
-}
-#nav li {
-    float:left;
-    margin:0;
-    list-style-type:none;
 }
 .highlight {
     color: var(--accent-dark);
