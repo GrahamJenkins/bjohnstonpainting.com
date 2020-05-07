@@ -58,3 +58,7 @@ h1 {
     background-color: var(--accent-dark);
     color: var(--light);
 }
+#testimonials {
+    border-top:solid 2px var(--accent-dark);
+    margin-top:20px;
+}
