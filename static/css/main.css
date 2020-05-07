@@ -22,9 +22,10 @@ h1 {
     margin:20px;
 }
 #logo {
-    background-image: url('static/img/branding/logo-name-white.PNG');
-    height:100px;
+    margin-top:20px;
+    background-image: url('/img/logo.png');
     width:200px;
+    height:100px;
     background-size:200px;
     background-repeat:no-repeat;
 }
@@ -35,7 +36,6 @@ h1 {
     color: var(--light);
 }
 #header-right {
-    height:150px;
     padding-left:20px;
     position:relative;
 }

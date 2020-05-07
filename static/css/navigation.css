@@ -3,13 +3,13 @@
     font-size:16px;
     list-style: none;
     font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    right:0;
+    position: relative;
     z-index: 5;
+    height:50px;
+    margin-bottom:10px;
 }
 .nav li {
-    float: left;
+    float: right;
     margin:0;
     position: relative;
 }
@@ -19,14 +19,15 @@
 }
 .nav li a {
     display: block;
+    cursor:pointer;
     padding: 5px;
-    margin-right:5px;
     color: #fff;
     text-decoration: none;
     height:30px;
     border:solid 2px transparent;
+    transition: all 0.8s;
 }
-.nav a:hover, .nav a.active {
+.nav a:active, .nav a.active, .nav a:hover {
     border-bottom:solid 2px white;
 }
 .nav ul li a, .nav ul li a.active, .nav ul li a:hover {
@@ -44,7 +45,7 @@
     background: rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
     list-style: none;
     position: absolute;
-    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+    left: -3000px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
 }
 .nav ul li {
     padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
