@@ -10,6 +10,17 @@
 body {
     background-color: var(--light);
 }
+h1, h2, h3, h4, h5, h6, h6, ul {
+    font-weight:bold;
+    margin:10px;
+}
+h1 {
+    text-align:center;
+    margin:20px;
+}
+.container img {
+    margin:20px;
+}
 #logo {
     background-image: url('/img/logo.jpg');
     height:100px;
