@@ -24,6 +24,7 @@
     color: #fff;
     text-decoration: none;
     height:30px;
+    border:solid 2px transparent;
 }
 .nav a:hover, .nav a.active {
     border-bottom:solid 2px white;
