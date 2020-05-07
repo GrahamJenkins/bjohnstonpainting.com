@@ -22,7 +22,7 @@ h1 {
     margin:20px;
 }
 #logo {
-    background-image: url('/img/logo.jpg');
+    background-image: url('static/img/branding/logo-name-white.PNG');
     height:100px;
     width:200px;
     background-size:200px;
