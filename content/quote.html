@@ -5,28 +5,31 @@ menu: "main"
 weight: 50
 ---
         <div class="container">
-            <div class="row">
-                <h4>Request a quote</h4>
-                <em>Form currently inactive</em><br /><br />
-                    <p>Generic instructions and direct users to phone/email for general inquiries.</p>
-                    <form>
-                      <div class="four columns">
+              <h4>Request a quote</h4>
+              <em>Form currently inactive</em><br /><br />
+              <p>Generic instructions and direct users to phone/email for general inquiries.</p>
+                  <form>
+                    <div class="row">
+                        <div class="three columns">
                           <label for="name">Your full name</label>
                           <input class="u-full-width" type="name" placeholder="John Doe" id="name">
-                      </div>
-                        <div class="four columns">
+                        </div>
+                        <div class="three columns">
                             <label for="email">Your email</label>
                             <input class="u-full-width" type="email" placeholder="your@email.com" id="email">
                         </div>
-                        <div class="four columns">
+                        <div class="three columns">
                             <label for="phone">Your phone number</label>
                             <input class="u-full-width" type="phone" placeholder="(800) 555-1234" id="phone">
                         </div>
-                        <div class="four columns">
-                            <label for="address">Street Address and Zip</label>
-                            <input class="u-full-width" type="address" placeholder="200 Main St, ######" id="name">
+                    </div>
+
+                    <div class="row">
+                        <div class="three columns">
+                          <label for="address">Street Address and Zip</label>
+                          <input class="u-full-width" type="address" placeholder="200 Main St, ######" id="name">
                         </div>
-                        <div class="four columns">
+                        <div class="three columns">
                             <label for="Services">Services interested in</label>
                             <select class="u-full-width" id="exampleRecipientInput">
                                 <option value="Interior">Interior</option>
@@ -36,7 +39,7 @@ weight: 50
                                 <option value="Other">Other</option>
                             </select>
                         </div>
-                        <div class="four columns">
+                        <div class="three columns">
                             <label for="Start-time">Preferred Start Time</label>
                             <select class="u-full-width" id="exampleRecipientInput">
                                 <option value="1-week">1-week</option>
@@ -46,7 +49,7 @@ weight: 50
                                 <option value="Flexible">Other - Flexible</option>
                             </select>
                         </div>
-                        <div class="four columns">
+                        <div class="three columns">
                             <label for="Reason">Reason for Painting</label>
                             <select class="u-full-width" id="exampleRecipientInput">
                                 <option value="Maintence">General Maintence</option>
@@ -58,10 +61,11 @@ weight: 50
                                 <option value="Flexible">Other</option>
                             </select>
                         </div>
+                        </div>
                         <label for="message">Message</label>
                         <textarea class="u-full-width" placeholder="Hi Bill..." id="message"></textarea>
                         <input class="button-primary" type="submit" value="Submit">
                     </form>
                 </div>
-            </div>
+
         </div>
