@@ -6,6 +6,7 @@
     --light: #FFF7F0;
     --accent-dark: #0C3A7B;
     --accent-light: #FFF7F0;
+    --accent-purple:#8390FA;
 }
 body {
     background-color: var(--light);
@@ -32,6 +33,7 @@ h1 {
 #header, #hero {
     background-color: var(--accent-dark);
 }
+
 #hero, #branding {
     color: var(--light);
 }
@@ -61,4 +63,9 @@ h1 {
 #testimonials {
     border-top:solid 2px var(--accent-dark);
     margin-top:20px;
+}
+
+.justifyText {
+  text-align: justify;
+  text-justify: inter-word
 }
