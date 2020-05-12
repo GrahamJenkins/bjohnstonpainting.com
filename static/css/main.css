@@ -80,7 +80,7 @@ h1 {
 }
 #testimonials, #cta {
     border-top:solid 1px var(--accent-dark);
-    margin-top:20px;
+    margin:20px 0 20px 0;
 }
 @media (max-width:500px) {
     img.u-max-full-width {
