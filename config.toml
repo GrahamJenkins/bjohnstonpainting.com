@@ -7,19 +7,8 @@ theme = "bjpainting"
         identifier = "home"
         name = "Home"
         url = "/"
-        weight = -110
+        weight = 100
     [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-        weight = -90
-    [[menu.main]]
-        identifier = "services"
+        identifier = "Services"
         name = "Services"
-        url = "/services"
-        weight = -89
-    [[menu.main]]
-        identifier = "contact"
-        name = "Contact"
-        url = "/contact"
-        weight = -80
+        weight = 80

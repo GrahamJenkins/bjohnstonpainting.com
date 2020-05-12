@@ -1,36 +1,94 @@
 :root {
+    --menubg: #154280;
+    --menuhover: #222;
     --dark: #B38148;
     --medium: #FFC88A;
     --light: #FFF7F0;
     --accent-dark: #0C3A7B;
     --accent-light: #FFF7F0;
+    --accent-purple:#8390FA;
 }
 body {
     background-color: var(--light);
 }
-#logo {
-    background-image: url('/images/logo.png');
-    height:150px;
-    width:300px;
-    background-size:300px;
-    background-repeat:no-repeat;
-    z-index: 2;
-    position: absolute;
+h1, h2, h3, h4, h5, h6, h6, ul {
+    font-weight:bold;
+    margin:10px 0;
 }
-#header, #hero, #warrantyhero, #rackhero, #imager, #form {
+h1 {
+    text-align:center;
+    margin:20px;
+}
+.container img {
+    margin:20px;
+}
+#logo {
+    margin-top:20px;
+    background-image: url('/img/logo.png');
+    width:200px;
+    height:85px;
+    background-size:200px;
+    background-repeat:no-repeat;
+}
+#header, #hero {
     background-color: var(--accent-dark);
 }
+
 #hero {
     color: var(--light);
+    padding-bottom:20px;
+    text-align:center;
+}
+#hero .container {
+    height:500px;
+    overflow:hidden;
+}
+.branding {
+    color: var(--light);
+    padding:0;
+}
+.branding h6, .branding h5 {
+    margin-top:0;
+    margin-left:30px;
+}
+.branding h5 {
+    margin-top:-20px;
+}
+@media (min-width:500px) {
+    .branding {
+        text-align:right;
+        margin-top:10px;
+    }
+    .branding h5 {
+        margin-top:0px;
+    }
 }
 .highlight {
     color: var(--accent-dark);
     font-weight:bold;
     margin-top:10px;
 }
-#footer {
+.form {
+    background-color: #afcefa;
+    padding-top:20px;
     margin-top:20px;
-    padding-bottom:20px;
+}
+#footer {
+    padding:20px 0;
     background-color: var(--accent-dark);
     color: var(--light);
+}
+#testimonials, #cta {
+    border-top:solid 1px var(--accent-dark);
+    margin:20px 0 20px 0;
+}
+@media (max-width:500px) {
+    img.u-max-full-width {
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+    }
+}
+.center {
+    text-align:center;
 }
