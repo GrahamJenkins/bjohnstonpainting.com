@@ -36,6 +36,12 @@ h1 {
 
 #hero {
     color: var(--light);
+    padding-bottom:20px;
+    text-align:center;
+}
+#hero .container {
+    height:500px;
+    overflow:hidden;
 }
 .branding {
     color: var(--light);
@@ -72,7 +78,18 @@ h1 {
     background-color: var(--accent-dark);
     color: var(--light);
 }
-#testimonials {
+#testimonials, #cta {
     border-top:solid 1px var(--accent-dark);
     margin-top:20px;
+}
+@media (max-width:500px) {
+    img.u-max-full-width {
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        border:solid 1px red;
+    }
+}
+.center {
+    text-align:center;
 }
