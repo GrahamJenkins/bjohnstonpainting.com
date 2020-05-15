@@ -17,7 +17,10 @@ h1, h2, h3, h4, h5, h6, h6, ul {
 }
 h1 {
     text-align:center;
-    margin:20px;
+}
+h1, h2, h3, h4 {
+  margin-top: 35px;
+  margin-bottom: 10px
 }
 .imagemargin img {
     margin:20px;
@@ -79,16 +82,26 @@ h1 {
     color: var(--light);
 }
 #testimonials, #cta {
-    border-top:solid 1px var(--accent-dark);
-    margin:20px 0 20px 0;
+    /* border-top:solid 1px var(--accent-dark); */
+    margin:10px 0 10px 0;
 }
+
+#cta {
+    color: var(--light);
+    background-color: var(--accent-dark);
+}
+.center {
+    text-align:center;
+}
+
+
 @media (max-width:500px) {
     img.u-max-full-width {
         display:block;
         margin-right:auto;
         margin-left:auto;
     }
-}
-.center {
-    text-align:center;
+    .mobile-text {
+      text-align: center;
+    }
 }
