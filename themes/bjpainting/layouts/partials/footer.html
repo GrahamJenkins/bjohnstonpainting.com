@@ -4,7 +4,9 @@
                     <div class="four columns">
                       <h4>About Us</h4>
                         <p>Bill Johnston Painting is a family owned business that serves residents and businesses in the greater Nebraska area. <br>Call us for a FREE estimate or quote today!</p>
-                        <a class="button button-primary" href="/quote">Request a Quote</a>
+                        {{ if ne .Page.Name "Quote"}}
+                        <a class="button button-primary" href="/quote">Request a Quote <i class="fas fa-paste client-icon"></i></a>
+                        {{ end }}
                     </div>
                     <div class="four columns">
                         <h4>Contact Us</h4>
@@ -19,10 +21,7 @@
                     </div>
                 </div>
             </div>
-
-
-
-<script>
-    new SimpleLightbox({elements: '.map a'});
-    new SimpleLightbox({elements: '.gallery a'});
-</script>
+            <script>
+                new SimpleLightbox({elements: '.map a'});
+                new SimpleLightbox({elements: '.gallery a'});
+            </script>
