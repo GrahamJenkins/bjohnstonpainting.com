@@ -2,7 +2,9 @@
             <div class="container" style="padding-top:5px;padding-bottom:5px">
                 <div class="row center">
                     <h5 style="margin:20px;">Remote or onsite consultation and detailed proposal that meets your needs!</h5>
+                    {{ if ne .Page.Name "Quote"}}
                     <a class="button button-primary" href="/quote">Get a Free Quote Today! <i class="fas fa-paste client-icon"></i></a>
+                    {{ end }}
                 </div>
             </div>
         </div>
