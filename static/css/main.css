@@ -11,7 +11,7 @@
 body {
     background-color: var(--light);
 }
-h1, h2, h3, h4, h5, h6, h6, ul {
+h1, h2, h3, h5, h6, h6, ul {
     font-weight:bold;
     margin:10px 0;
 }
@@ -19,6 +19,7 @@ h1 {
     text-align:center;
 }
 h1, h2, h3, h4 {
+  font-weight:bold;
   margin-top: 35px;
   margin-bottom: 10px
 }
@@ -92,6 +93,19 @@ h1, h2, h3, h4 {
 }
 .center {
     text-align:center;
+}
+
+/* .client-logo {
+    margin-top:20px;
+    width:200px;
+    height:85px;
+    background-size:200px;
+    background-repeat:no-repeat;
+    background-image: url('/img/testimonials/headshot-professional.png');
+} */
+
+.client-icon {
+  font-size: 35px;
 }
 
 
