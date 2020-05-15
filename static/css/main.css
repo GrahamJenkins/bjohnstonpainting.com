@@ -71,6 +71,7 @@ h1, h2, h3, h4 {
     color: var(--accent-dark);
     font-weight:bold;
     margin-top:10px;
+    text-decoration: underline var(--accent-dark);
 }
 .form {
     background-color: #afcefa;
@@ -95,19 +96,23 @@ h1, h2, h3, h4 {
     text-align:center;
 }
 
-/* .client-logo {
-    margin-top:20px;
-    width:200px;
+.client-logo {
+    margin-top:5px;
+    width:100px;
     height:85px;
-    background-size:200px;
+    /* background-size:200px;
     background-repeat:no-repeat;
-    background-image: url('/img/testimonials/headshot-professional.png');
-} */
-
-.client-icon {
-  font-size: 35px;
+    background-image: ; */
 }
 
+.client-icon {
+  font-size: 14px;
+}
+
+.button-icon {
+  font-size: 45x;
+  margin-bottom: 10px;
+}
 
 @media (max-width:500px) {
     img.u-max-full-width {
