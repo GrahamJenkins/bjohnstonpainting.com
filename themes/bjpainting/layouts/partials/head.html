@@ -21,7 +21,30 @@
         <!-- JS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script src="/js/simpleLightbox.js"></script>
+        <script src="/js/main.js"></script>
         <!-- Favicon
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+        
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "HomeAndConstructionBusiness",
+            "name": "{{ .Site.Title }}",
+            "description": "{{ .Site.Params.description }}",
+            "@id": "{{ .Site.BaseURL }}",
+            "url": "{{ .Site.BaseURL }}",
+            "telephone": "{{ .Site.Params.phone }}",
+            "areaServed": {
+                "@type": "City",
+                "name": "Lincoln",
+                "containedInPlace": {
+                    "@type": "State",
+                    "name": "Nebraska"
+                }
+            },
+            "priceRange": "$$"
+        }
+        </script>
     </head>

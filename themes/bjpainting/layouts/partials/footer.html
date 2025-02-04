@@ -1,29 +1,31 @@
         <div id="footer">
-            <div class="container mobile-text">
-                <div class="row">
-                    <div class="four columns">
-                      <h4>About Us</h4>
-                        <p>Bill Johnston Painting is a family owned business that serves residents and businesses in the greater Nebraska area. <br>Call us for a FREE estimate or quote today!</p>
-                        {{ if ne .Page.Name "Quote"}}
-                        <a class="button button-primary" href="/quote">Request a Quote <i class="fas fa-paste client-icon"></i></a>
-                        {{ end }}
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h4>About Us</h4>
+                        <p>Bill Johnston Painting is a family owned business serving residents and businesses in the greater Nebraska area.</p>
                     </div>
-                    <div class="four columns">
+                    
+                    <div class="footer-section">
                         <h4>Contact Us</h4>
-                        <h6><strong>Phone: </strong> <i class="fas fa-phone-alt"></i> <a href="tel:402-416-6092"> 402-416-6092</a></h6>
-                        <h6><strong>Email:  </strong> <i class="fas fa-envelope"></i> <a href="mailto:Bill@bjohnstonpainting.com"> Bill@bjohnstonpainting.com</a></h6>
-                        <br>
-                        <p><a href="https://g.page/r/Cd1JpmDHtV8xEAg/review">Leave us a review</a></p>
-                    </div>
-                    <div class="four columns map">
-                        <h4 style="text-align:center">Greater Lincoln Area</h4>
-                        <a href="/img/stock/map.png" title="Map of Lincoln/Omaha region">
-                            <img style="width:90%;" src="/img/stock/map.png" alt="Map of Lincoln/Omaha region" title="Map of Lincoln/Omaha region" />
-                        </a>
+                        <div class="contact-info">
+                            <a href="tel:402-416-6092" class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>402-416-6092</span>
+                            </a>
+                            <a href="mailto:johnstonpaintsnebraska@gmail.com" class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>johnstonpaintsnebraska@gmail.com</span>
+                            </a>
+                            <a href="https://g.page/r/Cd1JpmDHtV8xEAg/review" class="contact-item">
+                                <i class="fas fa-star"></i>
+                                <span>Leave us a review</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <script>
-                new SimpleLightbox({elements: '.map a'});
+                new SimpleLightbox({elements: '.map-link'});
                 new SimpleLightbox({elements: '.gallery a'});
             </script>

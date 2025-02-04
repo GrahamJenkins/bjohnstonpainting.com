@@ -1,14 +1,18 @@
-baseURL = "https://bjohnstonpainting.com/"
+baseURL = "https://johnstonpaintsnebraska.com/"
 languageCode = "en-us"
 title = "Bill Johnston Painting"
 theme = "bjpainting"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Professional residential and commercial painting services for the Lincoln, Nebraska area."
+  phone = "+1-402-416-6092"
+  logo = "/static/img/branding/logo-name-white.PNG"
+
 [menu]
-    [[menu.main]]
-        identifier = "home"
-        name = "Home"
-        url = "/"
-        weight = 100
-    [[menu.main]]
-        identifier = "Services"
-        name = "Services"
-        weight = 80
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 100
+

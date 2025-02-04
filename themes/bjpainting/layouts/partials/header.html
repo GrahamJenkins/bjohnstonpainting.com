@@ -1,22 +1,18 @@
         <div id="header">
             <div class="container">
-                <div class="row">
-                    <div class="two columns">
-                        <a href="/">
+                <div class="header-top">
+                    <div class="logo-wrapper">
                             <div id="logo"></div>
-                        </a>
                     </div>
-                    <div class="two columns">&nbsp;</div>
-                    <div id="header-right" class="eight columns branding">
-                        <a class="button button-primary" href="/quote">Request a Quote <i class="fas fa-paste client-icon"></i></a>
-                        <h6><i class="fas fa-phone-alt"></i>  <a href="tel:402-416-6092">402-416-6092</a></h6>
-                        <h6><i class="fas fa-envelope"></i>  <a href="mailto:Bill@bjohnstonpainting.com">Bill@bjohnstonpainting.com</a></h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-{{ partial "menu.html" . }}
+                    <div class="contact-info">
+                        <div class="contact-details">
+                            <h6><i class="fas fa-phone-alt"></i><a href="tel:402-416-6092">402-416-6092</a></h6>
+                            <h6><i class="fas fa-envelope"></i><a href="mailto:johnstonpaintsnebraska@gmail.com">johnstonPaintsNebraska@gmail.com</a></h6>
+                        </div>
                     </div>
                 </div>
+                <nav class="main-nav">
+                    {{ partial "menu.html" . }}
+                </nav>
             </div>
         </div>
